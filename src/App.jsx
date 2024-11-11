@@ -1,5 +1,13 @@
 import * as Sentry from "@sentry/react";
-import { Features, Hero, Highlights, Model, Navbar } from "./components";
+import {
+  Features,
+  Footer,
+  Hero,
+  Highlights,
+  HowItWorks,
+  Model,
+  Navbar,
+} from "./components";
 
 const App = () => {
   // return (
@@ -12,13 +20,17 @@ const App = () => {
   //   </button>
   // );
   return (
-    <main className="bg-black">
-      <Navbar />
-      <Hero />
-      <Highlights />
-      <Model />
-      <Features />
-    </main>
+    <>
+      <main className="bg-black">
+        <Navbar />
+        <Hero />
+        <Highlights />
+        <Model />
+        <Features />
+        <HowItWorks />
+      </main>
+      <Footer />
+    </>
   );
 };
 
