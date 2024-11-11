@@ -1,15 +1,19 @@
 import { sentryVitePlugin } from "@sentry/vite-plugin";
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
+import react from "@vitejs/plugin-react";
+import { defineConfig } from "vite";
 
 // https://vite.dev/config/
 export default defineConfig({
-  plugins: [react(), sentryVitePlugin({
-    org: "sv-eq",
-    project: "javascript-react"
-  })],
+  // base: "/vision-phone-react",
+  plugins: [
+    react(),
+    sentryVitePlugin({
+      org: "sv-eq",
+      project: "javascript-react",
+    }),
+  ],
 
   build: {
-    sourcemap: true
-  }
-})
+    sourcemap: true,
+  },
+});

@@ -47,7 +47,7 @@ const Features = () => {
         </div>
         <div className="overflow-hiddens flex flex-col items-center justify-center">
           <div className="mb-24 mt-32 md:pl-24">
-            <h2 className="text-5xl font-semibold lg:text-7xl">
+            <h2 className="mb-8 text-5xl font-semibold lg:text-7xl">
               Forged in titanium
             </h2>
 
